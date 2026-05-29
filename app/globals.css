@@ -24,3 +24,35 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
 }
+
+.prose p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.prose p:first-child {
+  margin-top: 0;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+.prose ul,
+.prose ol {
+  margin: 0.5em 0;
+  padding-left: 1.25em;
+}
+
+.prose code {
+  font-size: 0.875em;
+  background: rgb(0 0 0 / 0.06);
+  padding: 0.125em 0.25em;
+  border-radius: 0.25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose code {
+    background: rgb(255 255 255 / 0.1);
+  }
+}
